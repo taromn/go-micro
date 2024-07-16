@@ -43,4 +43,8 @@ func render(w http.ResponseWriter, t string) {
 	if err := tmpl.Execute(w, nil); err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
+
+	// 1. create a slice of template paths
+	// 2. create a template.ParseFiles(templateSlice...) instance
+	// 3. write to w (http.ResponseWriter)
 }
