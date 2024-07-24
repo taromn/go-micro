@@ -26,3 +26,7 @@ func main() {
 	}
 
 }
+
+// what is Addr?
+// Addr is passed to net.Listen() function
+// https://github.com/golang/go/blob/c7ea20195a3415668047eebdc488a4af1f629f04/src/net/http/server.go#L3247-L3255
