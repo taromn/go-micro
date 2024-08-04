@@ -24,3 +24,10 @@ func (app *Config) Broker(w http.ResponseWriter, r *http.Request) {
 	w.Write(out)
 
 }
+
+// test
+// curl -X POST localhost:80 \
+// -H "Accept: application/json" \
+// -d @- << EOF
+// {"test1":"test"}
+// EOF
